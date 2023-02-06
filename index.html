@@ -10,162 +10,195 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
   <body>
-    <!--шапка сайту-->
-    <header>
-      <nav>
-        <a class="logo" href="./index.html"
-          ><span class="web">Web</span><span class="studio">Studio</span></a
-        >
-        <ul class="menu-nav">
-          <li><a class="nav-link" href="./index.html">Studio</a></li>
-          <li><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="nav-link" href="">Contacts</a></li>
-        </ul>
-      </nav>
-      <address class="address">
-        <ul>
-          <li>
-            <a class="contact" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="contact" href="tel:+110001111111">+11 (000) 111-11-11</a>
-          </li>
-        </ul>
-      </address>
-    </header>
-    <main>
-      <!--заголовок сайту-->
-      <section class="hero">
-        <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button class="hero-button" type="button">
-          <span class="button-text">Order Service</span>
-        </button>
-      </section>
-      <!--категорії-->
-      <section class="priorities">
-        <h2 class="visually-hidden">Feature</h2>
-        <ul>
-          <li class="priorities-box">
-            <h3>Strategy</h3>
-            <p>
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
-          <li class="priorities-box">
-            <h3>Punctuality</h3>
-            <p>
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-          <li class="priorities-box">
-            <h3>Diligence</h3>
-            <p>
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-          </li>
-          <li class="priorities-box">
-            <h3>Technologies</h3>
-            <p>
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <!--на різні гаджети-->
-      <section>
-        <h2 class="work-title">What are we doing</h2>
-        <ul>
-          <li class="gadgets-img">
-            <img
-              src="./images/img-first-page/img-1.jpg"
-              alt="Mac.jpg"
-              width="360"
-            />
-          </li>
-          <li class="gadgets-img">
-            <img
-              src="./images/img-first-page/img-2.jpg"
-              alt="Iphone.jpg"
-              width="360"
-            />
-          </li>
-          <li class="gadgets-img">
-            <img
-              src="./images/img-first-page/img-3.jpg"
-              alt="Macbook.jpg"
-              width="360"
-            />
-          </li>
-        </ul>
-      </section>
+    <!--=========ШАПКА==========-->
 
-      <!--секція команда-->
+    <header class="header">
+      <div class="container header-container">
+        <nav class="flex-nav">
+          <a class="logo" href="./index.html"
+            ><span class="web">Web</span><span class="studio">Studio</span></a
+          >
+          <ul class="menu-link">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Studio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="address">
+          <ul class="address-container">
+            <li class="contact-mail">
+              <a class="contact-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact-phone">
+              <a class="contact" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+
+    <main>
+      <!--==========ГЕРОЙ==========-->
+      <section class="hero">
+        <div class="container">
+          <div class="container-hero">
+            <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          </div>
+          <div class="button-hero">
+            <button class="hero-button" type="button">
+              <span class="button-text">Order Service</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--============КАТЕГОРИЇ============-->
+      <section class="priorities">
+        <div class="container">
+          <h2 class="visually-hidden">Feature</h2>
+          <ul class="priorities-list">
+            <li class="item">
+              <h3>Strategy</h3>
+              <p>
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+            <li class="item">
+              <h3>Punctuality</h3>
+              <p>
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li class="item">
+              <h3>Diligence</h3>
+              <p>
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+            <li class="item">
+              <h3>Technologies</h3>
+              <p>
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--===========ГАДЖЕТИ===========-->
+      <section class="work">
+        <h2 class="work-title">What are we doing</h2>
+        <div class="container">
+          <ul class="work-list">
+            <li class="item">
+              <img
+                src="./images/img-first-page/img-1.jpg"
+                alt="Mac.jpg"
+                width="360"
+              />
+            </li>
+            <li class="item">
+              <img
+                src="./images/img-first-page/img-2.jpg"
+                alt="Iphone.jpg"
+                width="360"
+              />
+            </li>
+            <li class="item">
+              <img
+                src="./images/img-first-page/img-3.jpg"
+                alt="Macbook.jpg"
+                width="360"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--============КОМАНДА============-->
       <section>
         <h2 class="team">Our Team</h2>
-        <ul>
-          <li class="team-box">
-            <img
-              class="team-img1"
-              src="./images/img-first-page/team-card-1.jpg"
-              alt="team-card-1.jpg"
-              width="264"
-            />
-            <h3>Mark Guerrero</h3>
-            <p>Product Designer</p>
-          </li>
-          <li class="team-box">
-            <img
-              class="team-img2"
-              src="./images/img-first-page/team-card-2.jpg"
-              alt="team-card-2.jpg"
-              width="264"
-            />
-            <h3>Tom Ford</h3>
-            <p>Frontend Developer</p>
-          </li>
-          <li class="team-box">
-            <img
-              class="team-img3"
-              src="./images/img-first-page/team-card-3.jpg"
-              alt="team-card-3.jpg"
-              width="264"
-            />
-            <h3>Camila Garcia</h3>
-            <p>Marketing</p>
-          </li>
-          <li class="team-box">
-            <img
-              class="team-img4"
-              src="./images/img-first-page/team-card-4.jpg"
-              alt="team-card-4.jpg"
-              width="264"
-            />
-            <h3>Daniel Wilson</h3>
-            <p>UI Designer</p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="team-list">
+            <li class="item">
+              <img
+                class="team-img"
+                src="./images/img-first-page/team-card-1.jpg"
+                alt="team-card-1.jpg"
+                width="264"
+              />
+              <h3>Mark Guerrero</h3>
+              <p>Product Designer</p>
+            </li>
+            <li class="item">
+              <img
+                class="team-img"
+                src="./images/img-first-page/team-card-2.jpg"
+                alt="team-card-2.jpg"
+                width="264"
+              />
+              <h3>Tom Ford</h3>
+              <p>Frontend Developer</p>
+            </li>
+            <li class="item">
+              <img
+                class="team-img"
+                src="./images/img-first-page/team-card-3.jpg"
+                alt="team-card-3.jpg"
+                width="264"
+              />
+              <h3>Camila Garcia</h3>
+              <p>Marketing</p>
+            </li>
+            <li class="item">
+              <img
+                class="team-img"
+                src="./images/img-first-page/team-card-4.jpg"
+                alt="team-card-4.jpg"
+                width="264"
+              />
+              <h3>Daniel Wilson</h3>
+              <p>UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
+
     <footer class="footer-box">
-      <a class="footer-logo" href="./index.html"
-        ><span class="web">Web</span
-        ><span class="footer-logo-studio">Studio</span></a
-      >
-      <p class="footer-text">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+      <div class="container">
+        <div class="footer-item">
+          <a class="footer-logo" href="./index.html"
+            ><span class="web">Web</span
+            ><span class="footer-logo-studio">Studio</span></a
+          >
+          <p class="footer-text">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
