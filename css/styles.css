@@ -170,12 +170,10 @@ img {
 /* герой титул */
 
 .hero {
-  
   padding: 188px 0;
   background-color: var(--title-text-color);
 
   text-align: center;
-  
 }
 .hero-title {
   font-weight: 700;
@@ -374,6 +372,8 @@ img {
 
 .portfolio-box {
   margin-right: 24px;
+}
+.portfolio-box:nth-child(-n + 6) {
   margin-bottom: 48px;
 }
 
